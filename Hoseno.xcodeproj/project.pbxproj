@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,14 @@
 		FC5DE4052646B3FA00C4F151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DE4042646B3FA00C4F151 /* Assets.xcassets */; };
 		FC5DE4082646B3FA00C4F151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DE4072646B3FA00C4F151 /* Preview Assets.xcassets */; };
 		FC5DE40B2646B3FA00C4F151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5DE4092646B3FA00C4F151 /* Main.storyboard */; };
+		FC5DE4172646B45000C4F151 /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE4162646B45000C4F151 /* Foundation+Extensions.swift */; };
+		FC5DE41C2646B89500C4F151 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = FC5DE41B2646B89500C4F151 /* SocketIO */; };
+		FC5DE4262646BD0400C4F151 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE4252646BD0400C4F151 /* SocketService.swift */; };
+		FC5DE42A2646BD2200C4F151 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE4292646BD2200C4F151 /* Constants.swift */; };
+		FC5DE4362646BEF000C4F151 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE4352646BEF000C4F151 /* Stock.swift */; };
+		FC5DE4392646BF2500C4F151 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE4382646BF2500C4F151 /* LogoView.swift */; };
+		FC5DE43C2646BF5F00C4F151 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE43B2646BF5F00C4F151 /* OnboardView.swift */; };
+		FC5DE4402646BF9C00C4F151 /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DE43F2646BF9C00C4F151 /* OnboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,13 @@
 		FC5DE40A2646B3FA00C4F151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC5DE40C2646B3FA00C4F151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC5DE40D2646B3FA00C4F151 /* Hoseno.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hoseno.entitlements; sourceTree = "<group>"; };
+		FC5DE4162646B45000C4F151 /* Foundation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
+		FC5DE4252646BD0400C4F151 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		FC5DE4292646BD2200C4F151 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC5DE4352646BEF000C4F151 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		FC5DE4382646BF2500C4F151 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		FC5DE43B2646BF5F00C4F151 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		FC5DE43F2646BF9C00C4F151 /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5DE41C2646B89500C4F151 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,13 +71,14 @@
 		FC5DE3FF2646B3F800C4F151 /* Hoseno */ = {
 			isa = PBXGroup;
 			children = (
-				FC5DE4002646B3F800C4F151 /* AppDelegate.swift */,
-				FC5DE4022646B3F800C4F151 /* ContentView.swift */,
-				FC5DE4042646B3FA00C4F151 /* Assets.xcassets */,
-				FC5DE4092646B3FA00C4F151 /* Main.storyboard */,
-				FC5DE40C2646B3FA00C4F151 /* Info.plist */,
-				FC5DE40D2646B3FA00C4F151 /* Hoseno.entitlements */,
 				FC5DE4062646B3FA00C4F151 /* Preview Content */,
+				FC5DE41E2646B8C700C4F151 /* Support files */,
+				FC5DE4242646BCD200C4F151 /* Services */,
+				FC5DE42C2646BE1300C4F151 /* Auth */,
+				FC5DE4312646BE8900C4F151 /* Fundamental */,
+				FC5DE42D2646BE1C00C4F151 /* Onboarding */,
+				FC5DE4152646B42800C4F151 /* Utilites */,
+				FC5DE4022646B3F800C4F151 /* ContentView.swift */,
 			);
 			path = Hoseno;
 			sourceTree = "<group>";
@@ -72,6 +89,108 @@
 				FC5DE4072646B3FA00C4F151 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC5DE4152646B42800C4F151 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4162646B45000C4F151 /* Foundation+Extensions.swift */,
+				FC5DE4292646BD2200C4F151 /* Constants.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		FC5DE41E2646B8C700C4F151 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4002646B3F800C4F151 /* AppDelegate.swift */,
+				FC5DE4042646B3FA00C4F151 /* Assets.xcassets */,
+				FC5DE4092646B3FA00C4F151 /* Main.storyboard */,
+				FC5DE40C2646B3FA00C4F151 /* Info.plist */,
+				FC5DE40D2646B3FA00C4F151 /* Hoseno.entitlements */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		FC5DE4242646BCD200C4F151 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4252646BD0400C4F151 /* SocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC5DE42C2646BE1300C4F151 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FC5DE42D2646BE1C00C4F151 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4302646BE7200C4F151 /* ViewModel */,
+				FC5DE42F2646BE6F00C4F151 /* View */,
+				FC5DE42E2646BE6800C4F151 /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FC5DE42E2646BE6800C4F151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC5DE42F2646BE6F00C4F151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE43B2646BF5F00C4F151 /* OnboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC5DE4302646BE7200C4F151 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE43F2646BF9C00C4F151 /* OnboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC5DE4312646BE8900C4F151 /* Fundamental */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE43E2646BF7F00C4F151 /* Enum */,
+				FC5DE4332646BECE00C4F151 /* View */,
+				FC5DE4322646BEC900C4F151 /* Model */,
+			);
+			path = Fundamental;
+			sourceTree = "<group>";
+		};
+		FC5DE4322646BEC900C4F151 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4352646BEF000C4F151 /* Stock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC5DE4332646BECE00C4F151 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC5DE4382646BF2500C4F151 /* LogoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC5DE43E2646BF7F00C4F151 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +209,9 @@
 			dependencies = (
 			);
 			name = Hoseno;
+			packageProductDependencies = (
+				FC5DE41B2646B89500C4F151 /* SocketIO */,
+			);
 			productName = Hoseno;
 			productReference = FC5DE3FD2646B3F800C4F151 /* Hoseno.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +239,9 @@
 				Base,
 			);
 			mainGroup = FC5DE3F42646B3F800C4F151;
+			packageReferences = (
+				FC5DE41A2646B89500C4F151 /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = FC5DE3FE2646B3F800C4F151 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,8 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5DE42A2646BD2200C4F151 /* Constants.swift in Sources */,
+				FC5DE4402646BF9C00C4F151 /* OnboardViewModel.swift in Sources */,
+				FC5DE4262646BD0400C4F151 /* SocketService.swift in Sources */,
+				FC5DE4362646BEF000C4F151 /* Stock.swift in Sources */,
 				FC5DE4032646B3F800C4F151 /* ContentView.swift in Sources */,
+				FC5DE43C2646BF5F00C4F151 /* OnboardView.swift in Sources */,
+				FC5DE4392646BF2500C4F151 /* LogoView.swift in Sources */,
 				FC5DE4012646B3F800C4F151 /* AppDelegate.swift in Sources */,
+				FC5DE4172646B45000C4F151 /* Foundation+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,14 +415,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hoseno/Hoseno.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Hoseno/Support files/Hoseno.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hoseno/Preview Content\"";
 				DEVELOPMENT_TEAM = 958LP7D9B7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Hoseno/Info.plist;
+				INFOPLIST_FILE = "Hoseno/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -307,14 +439,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hoseno/Hoseno.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Hoseno/Support files/Hoseno.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Hoseno/Preview Content\"";
 				DEVELOPMENT_TEAM = 958LP7D9B7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Hoseno/Info.plist;
+				INFOPLIST_FILE = "Hoseno/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -348,6 +480,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC5DE41A2646B89500C4F151 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 16.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC5DE41B2646B89500C4F151 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC5DE41A2646B89500C4F151 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC5DE3F52646B3F800C4F151 /* Project object */;
 }
